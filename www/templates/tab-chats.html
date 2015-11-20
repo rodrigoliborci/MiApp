@@ -1,0 +1,38 @@
+
+<ion-view view-title="Sensor">
+  <ion-content>
+    <div class="main">
+
+          <div class="skills-grid text-center">
+            <div class="" id="circles-1"></div>
+            <p>Humedad</p>
+          </div>
+          
+          <div class="clear"> </div>
+            <div class="clearfix"> </div>
+        
+
+  </div>
+  <script type="text/javascript" src="js/circles.js"></script>
+                   <script>
+                var colors = [
+                    ['#ffffff', '#fac564']
+                  ];
+                  var child = document.getElementById('circles-1'),
+                    percentage = 20;
+                    
+                  Circles.create({
+                    id:         child.id,
+                    percentage: percentage,
+                    radius:     70,
+                    width:      15,
+                    number:     percentage / 1,
+                    text:       '%',
+                    colors:     colors[1 - 1]
+                  });
+                
+            
+        </script>
+  </ion-content>
+</ion-view>
+
